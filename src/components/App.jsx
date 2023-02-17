@@ -5,7 +5,7 @@ import  user  from "user.json";
 export const App = () => {
   return (
     <div>
-    <Profile profileData={user}/>
+    <Profile user={user}/>
       </div>
   );
 };
