@@ -6,8 +6,8 @@ width: 48px;
 object-fit: contain;
 `;
 
-export const IsOnline = styled.span`
-background-color: ${friend => friend.IsOnline ? 'green' : 'red'};
+export const Status = styled.span`
+background-color: ${props => props.isOnline ? 'green' : 'red'};
 margin-top: 38px;
 width: 14px;
 height: 14px;
