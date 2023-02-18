@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import { Description } from "./Description";
 import { Stats } from "./Stats";
+import { Wrapper } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
-    return <div className="profile">
+    return <Wrapper>
         <Description username={username}
         tag={tag}
         location={location}
         avatar={avatar}/>
         <Stats stats={stats}/>
-  </div>;
+  </Wrapper>;
 };
 
 Profile.propTypes = {

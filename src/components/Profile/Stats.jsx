@@ -1,20 +1,21 @@
 import PropTypes from 'prop-types';
+import { List, Item, Label } from './Stats.styled';
 
 export const Stats = ({ stats: {followers, views, likes} }) => {
-    return <ul className="stats">
-    <li>
-      <span className="label">Followers</span>
+    return <List>
+    <Item>
+      <Label>Followers</Label>
       <span className="quantity">{followers}</span>
-    </li>
-    <li>
-      <span className="label">Views</span>
+    </Item>
+    <Item>
+      <Label>Views</Label>
       <span className="quantity">{views}</span>
-    </li>
-    <li>
-      <span className="label">Likes</span>
+    </Item>
+    <Item>
+      <Label>Itemkes</Label>
       <span className="quantity">{likes}</span>
-    </li>
-  </ul>
+    </Item>
+  </List>
 }
 
 Stats.propTypes = {
